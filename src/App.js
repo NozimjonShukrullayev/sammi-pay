@@ -1,7 +1,38 @@
+import { Billing, Business, Clients, Contract, CTA, Footer, Navbar, Statistics, Testimonials } from "./components";
+import { Home } from "./components";
+import { styles } from "./util/style";
+
 function App() {
   return (
-    <div className="bg-black md:text-amber-400 md:bg-slate-400 text-red-700 text-2xl py-10 text-center font-bold underline">Hello world!</div>
+    <div className="bg-primary w-full overflow-hidden">
+      {/* Navbar */}
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Navbar />
+        </div>
+      </div>
+
+      {/* Home */}
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.container}`}>
+          <Home />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Statistics />
+          <Contract />
+          <Billing />
+          <Business />
+          <Testimonials />
+          <Clients />
+          <CTA />
+          <Footer />
+        </div>
+      </div>
+    </div>
   )
 }
 
-export default App
+export default App;

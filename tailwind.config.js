@@ -5,24 +5,35 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {},
-      fontFamily: {},
+      colors: {
+        primary: "#00040f",
+        secondary: "#00f6ff",
+        lightWhite: "rgba(255, 255, 255, 0.7)",
+        lightBlue: "rgba(9, 151, 124, 0.1)",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
     },
     screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+      'xs': '480px',
+      // => @media (min-width: 480px) { ... }
 
-      'md': '768px',
+      'ss': '620px',
+      // => @media (min-width: 620px) { ... }
+
+      'sm': '768px',
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
+      'md': '1060px',
+      // => @media (min-width: 1060px) { ... }
 
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
+      'lg': '1200px',
+      // => @media (min-width: 1200px) { ... }
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+      'xl': '1700px',
+      // => @media (min-width: 1700px) { ... }
     }
   },
   plugins: [],
