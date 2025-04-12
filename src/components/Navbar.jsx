@@ -35,7 +35,7 @@ function Navbar() {
       </div>
       
       {/* media navbar */}
-      <div className={`${toggleNav ? 'flex' : 'hidden'} p-6 absolute top-20 right-0 left-0 w-full sidebar bg-black-gradient z-[99]`}>
+      <div className={`${toggleNav ? 'flex' : 'hidden'} sm:hidden p-6 absolute top-20 right-0 left-0 w-full sidebar bg-black-gradient z-[99]`}>
         <ul className="list-none flex flex-col justify-center items-center flex-1">
           {navigationLinks.map((nav, idx) => (
             <li key={nav.id} className={`font-montserrat font-normal cursor-pointer text-[16px] ${idx === navigationLinks.length - 1 ? "mb-0" : "mb-5"} ${activeLink === nav.id ? "text-white" : "text-lightWhite"} hover:text-white transition-all duration-500`} onClick={() => activeLinkHandler(nav.id)}>
